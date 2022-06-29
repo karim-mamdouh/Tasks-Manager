@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="To-Do List" />
+    <meta
+      property="og:image"
+      content="./assets/do-list-word-concepts-banner-2291906.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Add your tasks to be traked here, tasks are saved on your local storage"
+    />
+    <meta
+      property="og:url"
+      content="https://karim-mamdouh.github.io/Playing-Cards/"
+    />
+    <title>To-Do List</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- Add task form -->
+    <form id="form">
+      <input type="text" placeholder="enter Project Name" id="form__text" />
+      <button type="submit" id="form__add-btn" name="add-button">ADD</button>
+    </form>
+    <!-- Cards section -->
+    <section class="container">
+      <!-- In progress card -->
+      <div id="inProgress">
+        <h2>In Progress</h2>
+        <ul class="tasksSection"></ul>
+      </div>
+      <!-- On hold card -->
+      <div id="onHold">
+        <h2>On Hold</h2>
+        <ul class="tasksSection"></ul>
+      </div>
+      <!-- Review card -->
+      <div id="review">
+        <h2>In Review</h2>
+        <ul class="tasksSection"></ul>
+      </div>
+      <!-- Approved card -->
+      <div id="approved">
+        <h2>Approved</h2>
+        <ul class="tasksSection"></ul>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(126, 184, 162);
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+form {
+  width: 60%;
+  margin: 4rem auto;
+  text-align: center;
+}
+.container > div {
+  width: 20%;
+  background-color: #fff;
+  text-align: center;
+}
+.container > div h2 {
+  padding: 20px;
+}
+#inProgress h2 {
+  background: orange;
+}
+#onHold h2 {
+  background: red;
+}
+#review h2 {
+  background: yellow;
+}
+#approved h2 {
+  background: green;
+}
+ul {
+  min-height: 250px;
+  list-style: none;
+}
+li {
+  padding: 20px;
+  border: 1px solid grey;
+}
+input[type="text"] {
+  padding: 10px 20px;
+  width: 55%;
+}
+button {
+  padding: 10px 20px;
+  color: #000;
+}
